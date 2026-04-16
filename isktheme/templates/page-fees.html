@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ISK fee structure for 2025/2026: base fees, compulsory electives, summer enrichment, and examination fees from Kindergarten to A-Level.">
+  <title>Fees &amp; Programmes | International School of Kuantan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { prefix: 'tw-', corePlugins: { preflight: false } }</script>
+  <link rel="stylesheet" href="isk-site.css">
+  <link rel="stylesheet" href="isk-enhanced.css">
+</head>
+<body>
+  <div class="isk-loader" aria-hidden="true"><div class="loader-content"><img class="loader-logo" src="image/isk-logo.png" alt=""><p style="font-weight:700;font-size:0.9rem;margin:0 0 1rem;opacity:0.7;">International School of Kuantan</p><div class="loader-bar"><div class="loader-bar-fill"></div></div></div></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="page-transition" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <a class="isk-watermark" href="#top" aria-label="Back to top"><img src="image/isk-logo.png" alt="ISK Logo"></a>
+  <div class="isk-site">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-topbar" aria-label="Main navigation">
+      <a class="brand-lockup" href="index.html"><img src="image/isk-logo.png" alt="ISK logo"><span><strong>International School of Kuantan</strong><span>Inspiring Success through Knowledge</span></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true"></span></button>
+      <nav class="site-nav" aria-label="Site pages">
+        <a href="index.html">Home</a>
+        <div class="nav-group">
+          <a class="nav-parent" href="programmes.html" aria-haspopup="true">Students</a>
+          <div class="nav-submenu" aria-label="Student pages">
+            <a href="programmes.html">Programmes Overview</a>
+            <a href="kindergarten.html">Kindergarten</a>
+            <a href="primary.html">Primary School</a>
+            <a href="lower-secondary.html">Lower Secondary</a>
+            <a href="high-school.html">High School</a>
+            <a href="pathways.html">Pathways and Enrichment</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <a class="nav-parent" href="academic-programmes.html" aria-haspopup="true">Learn With Us</a>
+          <div class="nav-submenu" aria-label="Programme pages">
+            <a href="ipc.html">IPC</a>
+            <a href="map-growth.html">MAP Growth</a>
+            <a href="ap-program.html">AP Program</a>
+            <a href="psat.html">PSAT</a>
+            <a href="sat.html">SAT</a>
+          </div>
+        </div>
+        <a href="organization.html">Organisation</a>
+        <div class="nav-group">
+          <a class="nav-parent" href="key-person.html" aria-haspopup="true">People</a>
+          <div class="nav-submenu" aria-label="People pages">
+            <a href="key-person.html">Key Persons</a>
+            <a href="key-profiles.html">Profiles</a>
+          </div>
+        </div>
+        <a href="graduates.html">Graduates</a>
+        <a class="cta-mini" href="admissions.html">Admissions</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <picture class="hero-bg"><img src="481197396_1204102228382276_6359431951632195693_n-scaled-1.jpg" alt="ISK campus"></picture>
+        <div class="page-hero-inner">
+          <p class="breadcrumb"><a href="index.html">Home</a> / <a href="admissions.html">Admissions</a> / Fees</p>
+          <p class="eyebrow">2025/2026 Fee Structure</p>
+          <h1 class="page-title" id="page-title">Transparent fees with a complete learning experience.</h1>
+          <p class="page-copy">All fees include base tuition, compulsory elective pillars, summer enrichment camp, and examination fees where applicable.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-head">
+            <div data-reveal><p class="section-label">Fee Overview</p><h2>Select a stage to view detailed fee breakdown.</h2></div>
+            <p class="lede" data-reveal>Click on each stage card to see the full breakdown including base fees, elective programmes, and total costs.</p>
+          </div>
+
+          <div class="fee-stage-tabs" data-reveal>
+            <button class="fee-stage-tab active" data-fee="yr12">Year 1 &amp; 2</button>
+            <button class="fee-stage-tab" data-fee="yr345">Year 3, 4 &amp; 5</button>
+            <button class="fee-stage-tab" data-fee="yr6">Year 6</button>
+            <button class="fee-stage-tab" data-fee="yr7">Year 7</button>
+            <button class="fee-stage-tab" data-fee="yr8">Year 8</button>
+            <button class="fee-stage-tab" data-fee="yr9">Year 9</button>
+            <button class="fee-stage-tab" data-fee="yr10">Year 10</button>
+            <button class="fee-stage-tab" data-fee="yr11">Year 11</button>
+            <button class="fee-stage-tab" data-fee="alevel">A-Level</button>
+          </div>
+
+          <div class="fee-summary-bar" data-reveal>
+            <div class="fee-summary-item"><span class="fee-sum-label">Tuition</span><span class="fee-sum-value" id="feeSumTuition">RM 18,000</span></div>
+            <div class="fee-summary-item"><span class="fee-sum-label">Electives</span><span class="fee-sum-value" id="feeSumElectives">RM 5,800</span></div>
+            <div class="fee-summary-item"><span class="fee-sum-label">Exams</span><span class="fee-sum-value" id="feeSumExams"></span></div>
+            <div class="fee-summary-item"><span class="fee-sum-label">Total</span><span class="fee-sum-value" id="feeSumTotal">RM 27,600</span></div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr12" style="display:block;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 18,000</strong></div>
+                <div class="fee-line"><span>Overseas School Trip</span><strong></strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 20,300</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Ranger Camp</span><strong>RM 500</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Robotics &amp; Coding</span><strong>RM 1,800</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,800</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>C. Summer Enrichment Camp</h3>
+                <div class="fee-line"><span>English / Foreign Language / Etiquette</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (C)</span><strong>RM 1,500</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 1 &amp; 2</span><strong>RM 27,600</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr345" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 21,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 23,300</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Youth Leaders Programme</span><strong>RM 600</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Robotics &amp; Coding</span><strong>RM 1,800</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,900</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>C. Summer Enrichment Camp</h3>
+                <div class="fee-line"><span>English / Foreign Language / Etiquette</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (C)</span><strong>RM 1,500</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 3, 4 &amp; 5</span><strong>RM 30,700</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr6" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 21,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 23,300</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Youth Leaders Programme</span><strong>RM 600</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Robotics &amp; Coding</span><strong>RM 1,800</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,900</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>D. Examination Fees</h3>
+                <div class="fee-line"><span>Cambridge Checkpoint</span><strong>RM 1,436.40</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 6</span><strong>RM 32,136.40</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr7" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 27,000</strong></div>
+                <div class="fee-line"><span>Overseas School Trip</span><strong>RM 10,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 39,300</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Emerging Leaders Prog.</span><strong>RM 800</strong></div>
+                <div class="fee-line"><span>Pillar 2: Swimming / Equestrian / Golf / Tennis / Pickleball</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Robotics &amp; Coding</span><strong>RM 1,800</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,900</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 7</span><strong>RM 46,700</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr8" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 28,500</strong></div>
+                <div class="fee-line"><span>Overseas School Trip</span><strong>RM 10,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 40,800</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Emerging Leaders Prog.</span><strong>RM 800</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Dance / Sing / Theatre</span><strong>RM 1,600</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,900</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 8</span><strong>RM 48,200</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr9" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 30,000</strong></div>
+                <div class="fee-line"><span>Overseas School Trip</span><strong>RM 10,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 42,300</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Emerging Leaders Prog.</span><strong>RM 800</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Dance / Sing / Theatre</span><strong>RM 1,600</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,900</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>D. Examination Fees</h3>
+                <div class="fee-line"><span>Cambridge Checkpoint</span><strong>RM 2,052</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 9</span><strong>RM 51,752</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr10" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 31,500</strong></div>
+                <div class="fee-line"><span>Overseas School Trip</span><strong>RM 10,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 43,800</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Leadership Camp</span><strong>RM 1,000</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Financial Literacy</span><strong>RM 1,000</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,500</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>D. Examination Fees</h3>
+                <div class="fee-line"><span>Cambridge IGCSE</span><strong>RM 3,319.92</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 10</span><strong>RM 54,119.92</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="yr11" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 33,000</strong></div>
+                <div class="fee-line"><span>Overseas School Trip</span><strong>RM 10,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 45,300</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Leadership Camp</span><strong>RM 1,000</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Business Planning</span><strong>RM 1,000</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,500</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,500</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>D. Examination Fees</h3>
+                <div class="fee-line"><span>Cambridge IGCSE</span><strong>RM 2,213.28</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>Year 11</span><strong>RM 54,513.28</strong></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fee-detail-panel" data-fee-content="alevel" style="display:none;">
+            <div class="fee-detail-grid" data-reveal>
+              <div class="fee-category-card">
+                <h3>A. Base Fees</h3>
+                <div class="fee-line"><span>Annual Tuition Fee</span><strong>RM 39,000</strong></div>
+                <div class="fee-line"><span>Overseas School Trip</span><strong>RM 10,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (A)</span><strong>RM 51,300</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>B. Compulsory Electives</h3>
+                <div class="fee-line"><span>Pillar 1: Leadership Camp</span><strong>RM 1,000</strong></div>
+                <div class="fee-line"><span>Pillar 2: Elite Sport</span><strong>RM 2,000</strong></div>
+                <div class="fee-line"><span>Pillar 3: Innovation &amp; Entrepreneurship</span><strong>RM 1,000</strong></div>
+                <div class="fee-line"><span>Pillar 4: Japanese / Korean Language</span><strong>RM 1,000</strong></div>
+                <div class="fee-line fee-total"><span>Total (B)</span><strong>RM 5,000</strong></div>
+              </div>
+              <div class="fee-category-card">
+                <h3>D. Examination Fees</h3>
+                <div class="fee-line"><span>Cambridge A-Level</span><strong>RM 3,549.20</strong></div>
+              </div>
+              <div class="fee-category-card fee-grand-total">
+                <h3>Total Overall Fees</h3>
+                <div class="fee-line fee-total"><span>A-Level</span><strong>RM 61,349.20</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background:#f6fbff;">
+        <div class="wrap">
+          <div class="section-head">
+            <div data-reveal><p class="section-label">What's Included</p><h2>Click a module to see what students learn.</h2></div>
+          </div>
+          <div class="module-card-grid" data-reveal>
+            <div class="module-card" data-module="leadership">
+              <div class="module-icon"></div>
+              <h3>Leadership &amp; Statesmanship</h3>
+              <p>Ranger Camp, Youth Leaders, Emerging Leaders, Leadership Camp</p>
+              <div class="module-expand">
+                <p>Students engage in project-based leadership experiences and practical skill-building. The programme strengthens the ability to plan, organise, and lead activities, building confidence in communication and public speaking. It also promotes teamwork, collaboration, responsibility, decision-making, and problem-solving skills.</p>
+              </div>
+            </div>
+            <div class="module-card" data-module="sport">
+              <div class="module-icon"></div>
+              <h3>Elite Sport &amp; Discipline</h3>
+              <p>Swimming, Equestrian, Golf, Tennis, Pickleball, Padel</p>
+              <div class="module-expand">
+                <p>ISK students embody performance discipline. Physical excellence, mental resilience, and emotional regulation are treated as foundational competencies. Structured sport and wellbeing programmes cultivate endurance, accountability and composure under pressure.</p>
+              </div>
+            </div>
+            <div class="module-card" data-module="innovation">
+              <div class="module-icon"></div>
+              <h3>Innovation &amp; Value Creation</h3>
+              <p>Robotics &amp; Coding, Dance / Sing / Theatre, Financial Literacy, Business Planning</p>
+              <div class="module-expand">
+                <p>This programme transforms students from passive learners into active creators and problem solvers through engaging, hands-on experiences that integrate technical knowledge with essential life skills. Students think creatively, apply learning to real-world challenges, and develop an entrepreneurial mindset.</p>
+              </div>
+            </div>
+            <div class="module-card" data-module="culture">
+              <div class="module-icon"></div>
+              <h3>Culture &amp; Global Confidence</h3>
+              <p>Japanese / Korean Language, multilingual education, international exposure</p>
+              <div class="module-expand">
+                <p>Pillar 4 aims to develop well-rounded students who possess strong cultural awareness, refined social skills, and confidence to engage effectively in both local and global environments. Through multilingual education, international exposure, leadership opportunities, and participation in academic and creative competitions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap" style="max-width:640px;text-align:center;">
+          <div data-reveal>
+            <p class="section-label">Additional Fees</p>
+            <p>Application Fee: <strong>RM 300</strong> | Registration Fee: <strong>RM 2,000</strong></p>
+            <p style="color:var(--muted);font-size:0.9rem;">Final amounts should be confirmed with the Admissions Office. All fees are in Malaysian Ringgit (MYR).</p>
+            <div class="hero-actions" style="justify-content:center;margin-top:1.5rem;">
+              <a class="btn btn-primary btn-magnetic btn-glow" href="mailto:marketing@isk.edu.my">Contact Admissions</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer style="background:#040e1c;color:rgba(255,255,255,0.5);text-align:center;padding:2rem;">
+        <img src="image/isk-logo.png" alt="ISK" style="width:40px;height:40px;border-radius:50%;margin:0 auto 0.75rem;opacity:0.6;">
+        <p style="margin:0;font-size:0.84rem;">&copy; 2026 International School of Kuantan. All rights reserved.</p>
+        <p style="margin:0.3rem 0 0;font-size:0.76rem;"><a href="child-protection.html" style="color:rgba(255,255,255,0.45);text-decoration:underline;">Child Protection Policy</a>  <a href="academic-programmes.html" style="color:rgba(255,255,255,0.45);text-decoration:underline;">Academic Programmes</a></p>
+      </footer>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+  <script src="isk-site.js" defer></script>
+  <script src="isk-enhanced.js" defer></script>
+  <script src="isk-enhanced.js" defer></script>
+</body>
+</html>

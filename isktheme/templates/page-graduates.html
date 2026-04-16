@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ISK graduates have been accepted to prestigious universities worldwide across Asia, North America, Australia, and New Zealand.">
+  <title>ISK Graduates | International School of Kuantan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { prefix: 'tw-', corePlugins: { preflight: false } }</script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="isk-site.css">
+  <link rel="stylesheet" href="isk-enhanced.css">
+</head>
+<body>
+  <div class="isk-loader" aria-hidden="true"><div class="loader-content"><img class="loader-logo" src="image/isk-logo.png" alt=""><p style="font-weight:700;font-size:0.9rem;margin:0 0 1rem;opacity:0.7;">International School of Kuantan</p><div class="loader-bar"><div class="loader-bar-fill"></div></div></div></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="page-transition" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <a class="isk-watermark" href="#top" aria-label="Back to top"><img src="image/isk-logo.png" alt="ISK Logo"></a>
+  <div class="isk-site">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-topbar" aria-label="Main navigation">
+      <a class="brand-lockup" href="index.html"><img src="image/isk-logo.png" alt="ISK logo"><span><strong>International School of Kuantan</strong><span>Inspiring Success through Knowledge</span></span></a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><span aria-hidden="true"></span></button>
+      <nav class="site-nav" aria-label="Site pages">
+        <a href="index.html">Home</a>
+        <div class="nav-group">
+          <a class="nav-parent" href="programmes.html" aria-haspopup="true">Students</a>
+          <div class="nav-submenu" aria-label="Student pages">
+            <a href="programmes.html">Programmes Overview</a>
+            <a href="kindergarten.html">Kindergarten</a>
+            <a href="primary.html">Primary School</a>
+            <a href="lower-secondary.html">Lower Secondary</a>
+            <a href="high-school.html">High School</a>
+            <a href="pathways.html">Pathways and Enrichment</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <a class="nav-parent" href="academic-programmes.html" aria-haspopup="true">Learn With Us</a>
+          <div class="nav-submenu" aria-label="Programme pages">
+            <a href="ipc.html">IPC</a>
+            <a href="map-growth.html">MAP Growth</a>
+            <a href="ap-program.html">AP Program</a>
+            <a href="psat.html">PSAT</a>
+            <a href="sat.html">SAT</a>
+          </div>
+        </div>
+        <a href="organization.html">Organisation</a>
+        <div class="nav-group">
+          <a class="nav-parent" href="key-person.html" aria-haspopup="true">People</a>
+          <div class="nav-submenu" aria-label="People pages">
+            <a href="key-person.html">Key Persons</a>
+            <a href="key-profiles.html">Profiles</a>
+          </div>
+        </div>
+        <a href="graduates.html">Graduates</a>
+        <a class="cta-mini" href="admissions.html">Admissions</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <picture class="hero-bg"><img src="513827881_18470688610073074_2053179093397660604_n.jpg" alt="ISK graduates celebrating"></picture>
+        <div class="page-hero-inner">
+          <p class="breadcrumb"><a href="index.html">Home</a> / Graduates</p>
+          <p class="eyebrow">ISK Global Footprints</p>
+          <h1 class="page-title" id="page-title">Our graduates study at prestigious universities around the world.</h1>
+          <p class="page-copy">From our beginnings as a small school, we have grown into a nurturing and dynamic learning community. Our graduates have pursued their higher education in respected and prestigious universities around the world.</p>
+        </div>
+      </section>
+
+      <section class="section" style="background:#061b35;padding:4rem 0;">
+        <div class="wrap">
+          <div class="section-head">
+            <div data-reveal><p class="section-label" style="color:#4fb3ff;">ISK Global Footprints</p><h2 style="color:#fff;">Universities that have accepted ISK students.</h2></div>
+            <p class="lede" data-reveal style="color:rgba(255,255,255,0.6);">Click on a region to explore the universities our graduates attend.</p>
+          </div>
+          <div id="graduates-map" style="width:100%;height:550px;border-radius:16px;margin:2rem 0;border:2px solid rgba(79,179,255,0.2);"></div>
+        </div>
+      </section>
+
+      <section class="section" style="background:#0a2140;">
+        <div class="wrap">
+          <div class="grad-region-tabs" data-reveal>
+            <button class="grad-tab active" data-region="asia">Asia</button>
+            <button class="grad-tab" data-region="northamerica">North America</button>
+            <button class="grad-tab" data-region="oceania">Australia &amp; NZ</button>
+            <button class="grad-tab" data-region="middleeast">Middle East</button>
+          </div>
+
+          <div class="grad-region-content active" data-region-content="asia">
+            <div class="grad-uni-grid" data-reveal>
+              <div class="grad-uni-card"><strong>Asia Pacific University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Berjaya University College</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>International Islamic University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>INTI International College</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Limkokwing University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Manipal University</strong><span>India</span></div>
+              <div class="grad-uni-card"><strong>Monash University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Malaysia Aviation Training Academy</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Malaysia Institute of Art</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Malaysia Maritime Academy</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>MAHSA University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Ritsumeikan Asia Pacific University</strong><span>Japan</span></div>
+              <div class="grad-uni-card"><strong>Saint Louis University</strong><span>Philippines</span></div>
+              <div class="grad-uni-card"><strong>Sunway University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Sunway College</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Taylor's University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Tokyo Institute of Technology</strong><span>Japan</span></div>
+              <div class="grad-uni-card"><strong>University Malaysia Pahang</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>University of Nursing</strong><span>Myanmar</span></div>
+              <div class="grad-uni-card"><strong>University of Malaya</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>University of the Philippines Diliman</strong><span>Philippines</span></div>
+              <div class="grad-uni-card"><strong>University of Tsukuba</strong><span>Japan</span></div>
+              <div class="grad-uni-card"><strong>University Technology Malaysia</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>TAFE Melbourne College</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>University Tunku Abdul Rahman</strong><span>Perak, Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Asia Bunka Kaikan College</strong><span>Japan</span></div>
+              <div class="grad-uni-card"><strong>Management &amp; Science University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Nottingham University</strong><span>Malaysia</span></div>
+              <div class="grad-uni-card"><strong>Widad University College</strong><span>Malaysia</span></div>
+            </div>
+          </div>
+
+          <div class="grad-region-content" data-region-content="northamerica">
+            <div class="grad-uni-grid" data-reveal>
+              <div class="grad-uni-card"><strong>Dartmouth University</strong><span>USA</span></div>
+              <div class="grad-uni-card"><strong>New York University (NYU)</strong><span>USA</span></div>
+              <div class="grad-uni-card"><strong>San Francisco State University</strong><span>USA</span></div>
+              <div class="grad-uni-card"><strong>Trent University</strong><span>Canada</span></div>
+              <div class="grad-uni-card"><strong>Holland College</strong><span>Canada</span></div>
+              <div class="grad-uni-card"><strong>Concordia University</strong><span>Canada</span></div>
+            </div>
+          </div>
+
+          <div class="grad-region-content" data-region-content="oceania">
+            <div class="grad-uni-grid" data-reveal>
+              <div class="grad-uni-card"><strong>Deakin University</strong><span>Australia</span></div>
+              <div class="grad-uni-card"><strong>Lincoln University</strong><span>New Zealand</span></div>
+              <div class="grad-uni-card"><strong>Monash University</strong><span>Australia</span></div>
+              <div class="grad-uni-card"><strong>University of Adelaide</strong><span>Australia</span></div>
+              <div class="grad-uni-card"><strong>University of Canterbury</strong><span>New Zealand</span></div>
+              <div class="grad-uni-card"><strong>University of Wollongong</strong><span>Australia</span></div>
+              <div class="grad-uni-card"><strong>Canning College</strong><span>Perth, Australia</span></div>
+              <div class="grad-uni-card"><strong>University of Melbourne</strong><span>Australia</span></div>
+              <div class="grad-uni-card"><strong>Royal Melbourne Institute of Technology</strong><span>Australia</span></div>
+              <div class="grad-uni-card"><strong>James Cook University</strong><span>Australia</span></div>
+            </div>
+          </div>
+
+          <div class="grad-region-content" data-region-content="middleeast">
+            <div class="grad-uni-grid" data-reveal>
+              <div class="grad-uni-card"><strong>Qatar University</strong><span>Qatar</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background:#061b35;">
+        <div class="wrap">
+          <div class="stats-grid" data-reveal>
+            <div class="counter-stat glass-card-dark">
+              <span class="counter-number" data-count="50" data-suffix="+">0+</span>
+              <span class="counter-label" style="color:rgba(255,255,255,0.6);">Universities Worldwide</span>
+            </div>
+            <div class="counter-stat glass-card-dark">
+              <span class="counter-number" data-count="4" data-suffix="">0</span>
+              <span class="counter-label" style="color:rgba(255,255,255,0.6);">Continents</span>
+            </div>
+            <div class="counter-stat glass-card-dark">
+              <span class="counter-number" data-count="15" data-suffix="+">0+</span>
+              <span class="counter-label" style="color:rgba(255,255,255,0.6);">Countries</span>
+            </div>
+            <div class="counter-stat glass-card-dark">
+              <span class="counter-number" data-count="28" data-suffix="+">0+</span>
+              <span class="counter-label" style="color:rgba(255,255,255,0.6);">Years of Graduates</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background:#0a2140;padding:3rem 0;">
+        <div class="wrap" style="text-align:center;">
+          <div class="next-pages" data-reveal>
+            <a class="btn btn-magnetic btn-glow" href="academic-pathways.html" style="background:#fff;color:#0a1a2f !important;border:none;font-weight:800;">Academic Pathways</a>
+            <a class="btn btn-magnetic" href="admissions.html" style="background:transparent;color:#fff !important;border:2px solid rgba(255,255,255,0.5);font-weight:800;">Join ISK</a>
+          </div>
+        </div>
+      </section>
+
+      <footer style="background:#040e1c;color:rgba(255,255,255,0.5);text-align:center;padding:2rem;">
+        <img src="image/isk-logo.png" alt="ISK" style="width:40px;height:40px;border-radius:50%;margin:0 auto 0.75rem;opacity:0.6;">
+        <p style="margin:0;font-size:0.84rem;">&copy; 2026 International School of Kuantan. All rights reserved.</p>
+        <p style="margin:0.3rem 0 0;font-size:0.76rem;"><a href="child-protection.html" style="color:rgba(255,255,255,0.45);text-decoration:underline;">Child Protection Policy</a>  <a href="academic-programmes.html" style="color:rgba(255,255,255,0.45);text-decoration:underline;">Academic Programmes</a></p>
+      </footer>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js" defer></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" defer></script>
+  <script src="isk-site.js" defer></script>
+  <script src="isk-enhanced.js" defer></script>
+</body>
+</html>

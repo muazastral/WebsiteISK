@@ -3,7 +3,7 @@
 
   document.documentElement.classList.remove("no-js");
 
-  var root = document.querySelector(".isk-rebrand");
+  var root = document.querySelector(".isk-site");
   if (!root) {
     return;
   }
@@ -36,7 +36,8 @@
     });
 
     siteNav.addEventListener("click", function (event) {
-      if (event.target && event.target.tagName === "A") {
+      var link = event.target && event.target.closest ? event.target.closest("a") : null;
+      if (link) {
         document.body.classList.remove("isk-menu-open");
         navToggle.setAttribute("aria-expanded", "false");
       }
@@ -44,6 +45,8 @@
   }
 
   if (!reducedMotion && window.gsap) {
+    var hasScrollTrigger = Boolean(window.ScrollTrigger);
+
     if (window.ScrollTrigger) {
       window.gsap.registerPlugin(window.ScrollTrigger);
     }
@@ -56,18 +59,55 @@
       stagger: 0.12
     });
 
+    if (document.querySelector(".page-hero")) {
+      window.gsap.from(".page-hero .breadcrumb, .page-hero .eyebrow, .page-title, .page-copy, .kg-hero-badges, .kg-hero-actions", {
+        y: 22,
+        duration: 0.85,
+        ease: "power3.out",
+        stagger: 0.1
+      });
+    }
+
+    if (document.querySelector(".kg-hero .hero-bg img")) {
+      window.gsap.fromTo(".kg-hero .hero-bg img", {
+        scale: 1.06
+      }, {
+        scale: 1,
+        duration: 1.4,
+        ease: "power2.out"
+      });
+
+      if (window.ScrollTrigger) {
+        window.gsap.to(".kg-hero .hero-bg img", {
+          scale: 1.08,
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".kg-hero",
+            start: "top top",
+            end: "bottom top",
+            scrub: true
+          }
+        });
+      }
+    }
+
     window.gsap.utils.toArray("[data-reveal]").forEach(function (item) {
-      window.gsap.to(item, {
+      var revealOptions = {
         y: 0,
         opacity: 1,
         duration: 0.75,
-        ease: "power2.out",
-        scrollTrigger: {
+        ease: "power2.out"
+      };
+
+      if (hasScrollTrigger) {
+        revealOptions.scrollTrigger = {
           trigger: item,
           start: "top 100%",
           once: true
-        }
-      });
+        };
+      }
+
+      window.gsap.to(item, revealOptions);
     });
   } else {
     document.querySelectorAll("[data-reveal]").forEach(function (item) {
@@ -77,6 +117,30 @@
   }
 
   if (!reducedMotion && window.anime) {
+    window.anime({
+      targets: ".kg-float",
+      translateY: [-10, 12],
+      translateX: function (_el, index) {
+        return index % 2 ? [-8, 8] : [6, -6];
+      },
+      rotate: function (_el, index) {
+        return index % 2 ? ["-14deg", "18deg"] : ["20deg", "-12deg"];
+      },
+      duration: 1800,
+      direction: "alternate",
+      easing: "easeInOutSine",
+      loop: true,
+      delay: window.anime.stagger(160)
+    });
+
+    window.anime({
+      targets: ".kg-orbit-ring",
+      rotate: "1turn",
+      duration: 16000,
+      easing: "linear",
+      loop: true
+    });
+
     window.anime({
       targets: ".kg-spark",
       translateY: [-6, 8],
@@ -127,10 +191,10 @@
     var positions = [];
     var colors = [];
     var palette = [
-      new THREE.Color("#f1bd2f"),
+      new THREE.Color("#a8d8ff"),
       new THREE.Color("#58b9cf"),
       new THREE.Color("#ffffff"),
-      new THREE.Color("#168a63")
+      new THREE.Color("#1d71c9")
     ];
 
     for (var i = 0; i < pointCount; i += 1) {

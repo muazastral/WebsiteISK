@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="International School of Kuantan homepage with Cambridge learning pathways, student life, leadership, admissions, and contact information.">
+  <title>International School of Kuantan</title>
+  <link rel="stylesheet" href="isk-site.css">
+</head>
+<body>
+  <div class="isk-site">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-topbar" aria-label="Main navigation">
+      <a class="brand-lockup" href="index.html" aria-label="International School of Kuantan home">
+        <img src="cropped-313426158_554729049986267_6041572539954566796_n.png" alt="International School of Kuantan logo">
+        <span>
+          <strong>International School of Kuantan</strong>
+          <span>Inspiring Success through Knowledge</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Site pages">
+        <a href="index.html">Home</a>
+        <div class="nav-group">
+          <a class="nav-parent" href="programmes.html" aria-haspopup="true">Students</a>
+          <div class="nav-submenu" aria-label="Student pages">
+            <a href="programmes.html">Programmes Overview</a>
+            <a href="kindergarten.html">Kindergarten</a>
+            <a href="primary.html">Primary School</a>
+            <a href="lower-secondary.html">Lower Secondary</a>
+            <a href="high-school.html">High School</a>
+            <a href="pathways.html">Pathways and Enrichment</a>
+          </div>
+        </div>
+        <a href="organization.html">Organisation</a>
+        <div class="nav-group">
+          <a class="nav-parent" href="key-person.html" aria-haspopup="true">People</a>
+          <div class="nav-submenu" aria-label="People pages">
+            <a href="key-person.html">Key Persons</a>
+            <a href="key-profiles.html">Profiles</a>
+          </div>
+        </div>
+        <a class="cta-mini" href="admissions.html">Admissions</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <picture class="hero-bg">
+          <img src="481197396_1204102228382276_6359431951632195693_n-scaled-1.jpg" alt="International School of Kuantan campus building">
+        </picture>
+        <canvas id="iskConstellation" aria-hidden="true"></canvas>
+        <div class="hero-inner">
+          <p class="eyebrow">Kuantan, Pahang | Since 1996</p>
+          <h1 class="hero-title" id="hero-title">Cambridge pathway. Global confidence. Kuantan heart.</h1>
+          <p class="hero-copy">An accredited international school on Malaysia's East Coast, nurturing confident learners through Cambridge progression, a caring community, and future-ready student development.</p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="btn btn-primary" href="admissions.html">Start Admissions</a>
+            <a class="btn btn-ghost" href="programmes.html">Explore Programmes</a>
+          </div>
+          <div class="hero-meta" aria-label="School highlights">
+            <div class="hero-stat"><strong>1996</strong><span>Established in Kuantan</span></div>
+            <div class="hero-stat"><strong>WASC</strong><span>International accreditation</span></div>
+            <div class="hero-stat"><strong>Y1-11</strong><span>Cambridge progression</span></div>
+            <div class="hero-stat"><strong>IPC</strong><span>Primary inquiry learning</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section blue-band" aria-labelledby="site-map-title">
+        <div class="wrap">
+          <div class="section-head">
+            <div data-reveal>
+              <p class="section-label">Explore ISK</p>
+              <h2 id="site-map-title">Every stage has a clear place to begin.</h2>
+            </div>
+            <p class="lede" data-reveal>Find the programme, people, admissions guidance, and pathways that matter most for your family.</p>
+          </div>
+
+          <div class="page-card-grid" data-reveal>
+            <a class="link-card" href="kindergarten.html">
+              <span>Early Years</span>
+              <strong>Kindergarten</strong>
+              <p>Playful foundations, confidence, social growth, and early English routines.</p>
+            </a>
+            <a class="link-card" href="primary.html">
+              <span>Year 1 to Year 6</span>
+              <strong>Primary School</strong>
+              <p>IPC-inspired inquiry, core subjects, creativity, wellbeing, and digital literacy.</p>
+            </a>
+            <a class="link-card" href="lower-secondary.html">
+              <span>Year 7 to Year 9</span>
+              <strong>Lower Secondary</strong>
+              <p>Academic confidence, independence, leadership, arts, athletics, and study habits.</p>
+            </a>
+            <a class="link-card" href="high-school.html">
+              <span>Year 10 to Year 11</span>
+              <strong>High School</strong>
+              <p>Cambridge IGCSE preparation, assessment, subject mastery, and pathway planning.</p>
+            </a>
+            <a class="link-card" href="organization.html">
+              <span>School Identity</span>
+              <strong>Organisation</strong>
+              <p>Mission, vision, values, accreditation, facilities, and school community structure.</p>
+            </a>
+            <a class="link-card" href="key-person.html">
+              <span>Leadership</span>
+              <strong>Key Persons</strong>
+              <p>CEO, COO, Principal, and the leadership story behind the school.</p>
+            </a>
+            <a class="link-card" href="key-profiles.html">
+              <span>People</span>
+              <strong>Key Profiles</strong>
+              <p>Support staff and academic staff profiles, grouped for quick parent review.</p>
+            </a>
+            <a class="link-card" href="admissions.html">
+              <span>Join ISK</span>
+              <strong>Admissions</strong>
+              <p>Application steps, placement guidance, fee overview, and contact details.</p>
+            </a>
+            <a class="link-card" href="pathways.html">
+              <span>Beyond Year 11</span>
+              <strong>Pathways</strong>
+              <p>A Level, BTEC, Foundation, ACCA, English support, enrichment, and summer school.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="homepage-about-title">
+        <div class="wrap split">
+          <div class="story-copy" data-reveal>
+            <p class="section-label">About ISK</p>
+            <h2 id="homepage-about-title">A close international school community on Malaysia's East Coast.</h2>
+            <p>International School of Kuantan serves families with an English-medium environment, international accreditation, and a learning culture that balances academic excellence with character, creativity, and global awareness.</p>
+            <p>The 2026 prospectus positions ISK around Cambridge Curriculum progression, IPC-inspired Primary learning, IGCSE preparation, English language development, enrichment pillars, summer school, school houses, and future academic pathways.</p>
+            <ul class="value-strip" aria-label="ISK CLIPPER values">
+              <li>Caring</li>
+              <li>Leadership</li>
+              <li>Initiative</li>
+              <li>Passion</li>
+              <li>Positive</li>
+              <li>Effective</li>
+              <li>Respect</li>
+            </ul>
+            <div class="hero-actions">
+              <a class="btn btn-dark" href="organization.html">View Organisation</a>
+              <a class="btn btn-light bordered" href="key-person.html">Meet Key Persons</a>
+            </div>
+          </div>
+          <div class="portrait-stack" data-reveal>
+            <img src="isk.png" alt="ISK primary students and teachers">
+            <img src="513827881_18470688610073074_2053179093397660604_n.jpg" alt="ISK graduates celebrating on stage">
+          </div>
+        </div>
+      </section>
+
+      <section class="section sky-band" aria-labelledby="kuantan-title">
+        <div class="wrap kuantan-grid">
+          <div data-reveal>
+            <p class="section-label">Why Kuantan</p>
+            <h2 id="kuantan-title">A welcoming coastal city for international learning.</h2>
+            <p class="lede">Kuantan combines beaches, nature, cultural traditions, city convenience, and community warmth, giving students a calmer environment to live, learn, and grow.</p>
+            <ul class="kuantan-list">
+              <li>Beaches and water sports</li>
+              <li>Nature and outdoor learning</li>
+              <li>Cultural festivals and heritage</li>
+              <li>Local food and markets</li>
+              <li>Shopping and city convenience</li>
+              <li>Warm community networks</li>
+            </ul>
+          </div>
+          <div class="kuantan-photo" data-reveal>
+            <img src="468398383_18433972351073074_4424858866753920915_n.jpg" alt="Young ISK students performing in costume">
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="wrap contact-grid">
+          <div data-reveal>
+            <p class="section-label">Contact ISK</p>
+            <h2 id="contact-title">Visit the campus and see the learning culture in motion.</h2>
+            <p class="lede">The admissions team can answer programme questions, explain placement, share the latest fee schedule, and guide families through the application process.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="mailto:marketing@isk.edu.my">Email Marketing</a>
+              <a class="btn btn-light" href="tel:+60199267553">Call Admissions</a>
+            </div>
+          </div>
+          <address class="contact-card" data-reveal>
+            <strong>International School of Kuantan</strong>
+            <p>Jalan IM 7/9, Bandar Indera Mahkota,<br>25200 Kuantan, Pahang, Malaysia.</p>
+            <div class="contact-links">
+              <a href="tel:+6095736010">+609-573 6010</a>
+              <a href="tel:+60199267553">+6019-926 7553</a>
+              <a href="tel:+60199387553">+6019-938 7553</a>
+              <a href="mailto:marketing@isk.edu.my">marketing@isk.edu.my</a>
+              <a href="https://isk.edu.my/">www.isk.edu.my</a>
+            </div>
+          </address>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.149.0/three.min.js" defer></script>
+  <script src="isk-site.js" defer></script>
+</body>
+</html>
