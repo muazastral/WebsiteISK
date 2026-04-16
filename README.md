@@ -1,10 +1,20 @@
 # International School of Kuantan Rebrand Prototype
 
-This folder now contains a modern HTML5 rebrand concept for `isk.edu.my`.
+This folder now contains a modern split-page HTML5 rebrand concept for `isk.edu.my`.
 
 ## Files
 
-- `index.html` - standalone responsive prototype.
+- `index.html` - split-site homepage.
+- `programmes.html` - programme overview page.
+- `kindergarten.html` - dedicated Kindergarten page.
+- `primary.html` - dedicated Primary School page.
+- `lower-secondary.html` - dedicated Lower Secondary page.
+- `high-school.html` - dedicated High School page.
+- `pathways.html` - pathways and enrichment page.
+- `organization.html` - organisation, mission, vision, values, accreditation, facilities, and houses.
+- `key-person.html` - key leadership profile page.
+- `key-profiles.html` - support staff and academic staff profile page.
+- `admissions.html` - admissions and fee snapshot page.
 - `isk-rebrand.css` - full responsive styling.
 - `isk-rebrand.js` - GSAP, anime.js, and Three.js interactions.
 - `wordpress/isk-wordpress-custom-html.html` - quick WordPress iframe embed snippet.
@@ -30,7 +40,23 @@ This preserves the full HTML5 animation experience quickly, including GSAP, anim
 
 ### Option 2: Cleaner WordPress page
 
-Create a new WordPress page and paste the content inside `<div class="isk-rebrand">...</div>` from `index.html` into a Custom HTML block.
+Create individual WordPress pages, then paste the content inside `<div class="isk-rebrand">...</div>` from each HTML file into a Custom HTML block.
+
+Recommended WordPress page mapping:
+
+```text
+Home -> index.html
+Programmes -> programmes.html
+Kindergarten -> kindergarten.html
+Primary School -> primary.html
+Lower Secondary -> lower-secondary.html
+High School -> high-school.html
+Pathways and Enrichment -> pathways.html
+Organisation -> organization.html
+Key Persons -> key-person.html
+Key Profiles -> key-profiles.html
+Admissions -> admissions.html
+```
 
 Then enqueue these files through the theme, child theme, or a snippets plugin:
 
@@ -58,14 +84,13 @@ The prospectus positions ISK around Cambridge Curriculum progression from Year 1
 
 The current live site still contains American/AP/PSAT/SAT language in several pages. Before final publication, decide whether the refreshed site should fully move to the 2026 Cambridge positioning or keep a transitional college-readiness section.
 
-## Sections Included
+## Pages Included
 
 - Full-bleed campus hero with Three.js constellation animation.
-- About ISK, mission, vision, and CLIPPER values.
-- Campus facilities.
-- Dedicated Kindergarten, Primary, Lower Secondary, and High School designs.
-- Enrichment pillars and assessment model.
-- Academic pathways.
-- Why Kuantan.
-- Admissions steps and 2026 fee snapshot.
-- Contact calls to action.
+- Home page with page cards and ISK overview.
+- Programme overview plus dedicated Kindergarten, Primary, Lower Secondary, and High School pages.
+- Pathways and enrichment page covering A Level, BTEC, Foundation, ACCA/ICAEW, English support, summer school, and the four elective pillars.
+- Organisation page covering mission, vision, CLIPPER values, WASC accreditation, facilities, houses, and school structure.
+- Key Persons page covering CEO, COO, Principal, academic quality, and operations leadership.
+- Key Profiles page covering support staff and academic staff profile cards.
+- Admissions page with application steps, contact details, and 2026 fee snapshot.
